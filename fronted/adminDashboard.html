@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Admin Dashboard</title>
+
+<link rel="stylesheet"
+href="adminDashboard.css">
+
+</head>
+
+
+<body onload="checkAdmin()">
+
+<nav class="navbar">
+
+<h2>🌸 Luxe Cosmetic Admin</h2>
+
+<a href="product.html">
+
+Go Store
+
+</a>
+
+</nav>
+
+
+
+<div class="main">
+
+
+<!-- PRODUCT ADD -->
+
+<div class="addProduct">
+
+<h3>Add Product</h3>
+
+<form id="productForm">
+
+<input name="name"
+placeholder="Product Name"
+required>
+
+<input name="price"
+placeholder="Price"
+required>
+
+<input name="stock"
+placeholder="Stock"
+required>
+
+<input name="category"
+placeholder="Category">
+
+<input type="file"
+name="image"
+required>
+
+<button>
+
+Add Product
+
+</button>
+
+</form>
+
+</div>
+
+
+
+<!-- ORDERS -->
+
+<div>
+
+<h3>Customer Orders</h3>
+
+<div id="orders">
+
+Loading...
+
+</div>
+
+</div>
+
+
+</div>
+
+<script src="adminDashboard.js">
+
+</script>
+<script src="auth.js"></script>
+</body>
+
+</html>

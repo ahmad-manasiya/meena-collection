@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Checkout</title>
+
+<link rel="stylesheet"
+href="checkout.css">
+
+</head>
+
+
+<body onload="checkLogin()">
+
+<nav class="navbar">
+
+<h2>🌸 Luxe Cosmetic Checkout</h2>
+
+<a href="cart.html">
+
+Back To Cart
+
+</a>
+
+</nav>
+
+
+
+<div class="main">
+
+
+<!-- ADDRESS -->
+
+<div class="address">
+
+<h3>Delivery Address</h3>
+
+<input id="name"
+
+placeholder="Full Name">
+
+<input id="mobile"
+
+placeholder="Mobile Number">
+
+<textarea id="addr"
+
+placeholder="Address">
+
+</textarea>
+
+<input id="city"
+
+placeholder="City">
+
+<input id="pincode"
+
+placeholder="Pincode">
+
+
+<h3>Payment Method</h3>
+
+<label>
+
+<input type="radio"
+
+name="pay"
+
+value="COD"
+
+checked>
+
+Cash On Delivery
+
+</label>
+
+<br>
+
+<label>
+
+<input type="radio"
+
+name="pay"
+
+value="UPI">
+
+UPI Payment
+
+</label>
+
+</div>
+
+
+
+<!-- SUMMARY -->
+
+<div class="summary">
+
+<h3>Order Summary</h3>
+
+<p>
+
+Items :
+
+<span id="count">
+
+0
+
+</span>
+
+</p>
+
+<p>
+
+Total ₹
+
+<span id="total">
+
+0
+
+</span>
+
+</p>
+
+
+<button onclick="placeOrder()">
+
+Place Order
+
+</button>
+
+</div>
+
+</div>
+
+
+<script src="checkout.js"></script>
+<script src="auth.js"></script>
+
+</body>
+
+</html>

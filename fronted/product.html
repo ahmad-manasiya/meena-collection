@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>LuxeCart</title>
+
+<link rel="stylesheet" href="product.css">
+
+</head>
+
+
+    
+<body onload="checkLogin()">
+
+
+<!-- TOP NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">
+
+LuxeCart
+
+</div>
+
+
+<input id="search"
+
+placeholder="Search for products">
+
+
+<div class="navRight">
+
+<a href="login.html">
+
+Login
+
+</a>
+
+<a href="cart.html">
+
+Cart 🛒
+
+</a>
+
+<a href="wishlist.html">
+
+❤️ Wishlist
+
+</a>
+
+<div class="profile">
+
+<span id="username">
+
+</span>
+
+<div class="dropdown">
+
+<a href="orders.html">
+
+My Orders
+
+</a>
+
+<a onclick="logout()">
+
+Logout
+
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<!-- CATEGORY BAR -->
+
+<div class="categoryBar">
+
+<div onclick="catFilter('')">
+
+All
+
+</div>
+
+<div onclick="catFilter('Lipstick')">
+
+Lipstick
+
+</div>
+
+<div onclick="catFilter('Cream')">
+
+Cream
+
+</div>
+
+<div onclick="catFilter('Makeup')">
+
+Makeup
+
+</div>
+
+</div>
+
+
+
+<div class="main">
+
+
+<!-- LEFT FILTER -->
+
+<div class="filter">
+
+<h3>Filters</h3>
+
+
+<p>Price</p>
+
+<input type="range"
+
+id="price"
+
+min="0"
+
+max="5000"
+
+value="5000"
+
+oninput="priceValue.innerText=value">
+
+<p>
+
+₹ <span id="priceValue">
+
+5000
+
+</span>
+
+</p>
+
+
+
+<p>Rating</p>
+
+<select id="rating">
+
+<option value="">
+
+All
+
+</option>
+
+<option value="4">
+
+4⭐ & above
+
+</option>
+
+<option value="3">
+
+3⭐ & above
+
+</option>
+
+</select>
+
+
+
+<p>Stock</p>
+
+<select id="stock">
+
+<option value="">
+
+All
+
+</option>
+
+<option value="yes">
+
+In Stock
+
+</option>
+
+</select>
+
+
+<button onclick="applyFilter()">
+
+Apply
+
+</button>
+
+</div>
+
+
+
+<!-- PRODUCT GRID -->
+
+<div id="products"
+
+class="products">
+
+Loading...
+
+</div>
+
+</div>
+
+
+
+<!-- QUICK VIEW POPUP -->
+
+<div id="popup"
+
+class="popup">
+
+<div id="popupContent">
+
+</div>
+
+</div>
+
+<script src="auth.js"></script>
+
+<script src="product.js"></script>
+
+
+</body>
+
+</html>
