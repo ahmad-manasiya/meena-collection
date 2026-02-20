@@ -5,7 +5,7 @@ const router = express.Router();
 const multer = require("multer");
 
 const Product =
-require("../models/product");
+require("../models/Product");
 
 
 // IMAGE UPLOAD SETUP
