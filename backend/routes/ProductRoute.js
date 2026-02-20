@@ -9,7 +9,7 @@ require("../models/Product");
 
 
 // IMAGE UPLOAD SETUP
-
+ 
 const storage =
 multer.diskStorage({
 
